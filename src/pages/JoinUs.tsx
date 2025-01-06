@@ -44,17 +44,17 @@ const benefits = [
     {
         title: "You are more than a homemaker",
         description: "Time has come to reward you for your cooking skills which has till date made your family happy.",
-        icon: "../assets/joinFeature2.jpeg",
+        icon: "/joinFeature2.jpeg",
     },
     {
         title: "Become an entrepreneur sitting at home",
         description: "Just by registering as a home chef with us, you will have your own business sitting at home.",
-        icon: "../assets/joinFeature3.jpeg"
+        icon: "/joinFeature3.jpeg"
     },
     {
         title: "Khemtaw will do the heavy lifting",
         description: "We will take care of all logistics requirements, packaging material, training, etc.",
-        icon: "../assets/joinFeature1.jpeg"
+        icon: "/joinFeature1.jpeg"
     }
     ];
 
@@ -266,7 +266,7 @@ const faqs = [
                 </div>
 
                 <div className="grid grid-cols-3 gap-4">
-                {[1, 2, 3].map((index) => (
+                {[...benefits].map((benefit,index) => (
                     <motion.div
                     key={index}
                     className="aspect-video rounded-lg overflow-hidden shadow-lg"
@@ -274,7 +274,7 @@ const faqs = [
                     whileTap={{ scale: 0.95 }}
                     >
                     <img
-                        src={joinFeature}
+                        src={benefit.icon}
                         alt={`Feature ${index}`}
                         className="w-full h-full object-cover"
                     />
