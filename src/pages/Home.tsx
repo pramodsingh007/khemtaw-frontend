@@ -32,7 +32,7 @@ const features = [
 export default function HeroSection() {
     return (
         <>
-        <section className="relative min-h-screen bg-gradient-to-br from-[#FFF5EB] via-[#fcf3c6] to-[#FFE1E8] overflow-hidden -mt-44 pb-28 sm:pb-0 rounded-lg ">
+        <section className=" relative min-h-screen bg-gradient-to-br from-[#FFF5EB] via-[#fcf3c6] to-[#FFE1E8] overflow-hidden -mt-[85px] pb-28 sm:pb-0 rounded-lg ">
         {/* Main Content */}
         <div className="container mx-auto px-4 py-8 sm:py-12 lg:py-0">
             <div className="flex flex-col lg:flex-row lg:items-center lg:h-screen gap-8 lg:gap-12">

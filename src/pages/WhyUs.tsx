@@ -7,7 +7,7 @@ import fssaiCertified from '../assets/fssaiCertified.png';
 export default function WhyUsSection() {
     return (
         <>
-        <section className="relative w-full min-h-screen overflow-hidden -mt-44">
+        <section className="relative w-full min-h-screen overflow-hidden -mt-[85px]">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
             <img

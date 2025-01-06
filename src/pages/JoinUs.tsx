@@ -141,7 +141,7 @@ const faqs = [
     };
 
     return (
-        <div className="relative min-h-screen overflow-hidden -mt-40">
+        <div className="relative min-h-screen overflow-hidden -mt-[85px]">
         {/* Background with parallax effect */}
         <motion.div
             className="absolute inset-0 z-0 "
