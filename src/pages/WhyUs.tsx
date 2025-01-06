@@ -9,11 +9,11 @@ export default function WhyUsSection() {
         <>
         <section className="relative w-full min-h-screen overflow-hidden -mt-44">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0 ">
+        <div className="absolute inset-0 z-0">
             <img
             src={BackGround}
             alt="Wooden background"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg"
             />
         </div>
 

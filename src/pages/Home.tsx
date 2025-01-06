@@ -32,7 +32,7 @@ const features = [
 export default function HeroSection() {
     return (
         <>
-        <section className="relative min-h-screen bg-gradient-to-br from-[#FFF5EB] via-[#fcf3c6] to-[#FFE1E8] overflow-hidden -mt-44 pb-28 sm:pb-0 ">
+        <section className="relative min-h-screen bg-gradient-to-br from-[#FFF5EB] via-[#fcf3c6] to-[#FFE1E8] overflow-hidden -mt-44 pb-28 sm:pb-0 rounded-lg ">
         {/* Main Content */}
         <div className="container mx-auto px-4 py-8 sm:py-12 lg:py-0">
             <div className="flex flex-col lg:flex-row lg:items-center lg:h-screen gap-8 lg:gap-12">
@@ -79,13 +79,13 @@ export default function HeroSection() {
                 className="flex-1 relative min-h-[300px] sm:min-h-[400px] lg:min-h-0"
             >
                 {/* Pink Background Circle */}
-                <div className="absolute inset-0 bg-pink-100 rounded-full transform scale-110" />
+                <div className="absolute inset-0 sm:bg-pink-100 rounded-full transform scale-110" />
                 
                 {/* Main Thali Image */}
                 <motion.div
                 // animate={{rotate: 360}}
-                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-                className="relative z-10"
+                    transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+                    className="relative z-10"
                 >
                 <img
                     src={khemtaw17}
@@ -98,7 +98,7 @@ export default function HeroSection() {
 
                 {/* Connected Dishes */}
                 <motion.div
-                    className='absolute top-[-65px]'
+                    className='absolute sm:top-[-65px] top-[-55px]'
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 , rotate:360}}
                     transition={{ delay: 0.2 }}
@@ -114,7 +114,7 @@ export default function HeroSection() {
                     <div className="absolute inset-0 bg-pink-200 h-1 transform rotate-45 origin-left" />
                 </motion.div>
                 <motion.div
-                    className='absolute bottom-[-65px]'
+                    className='absolute sm:bottom-[-65px] bottom-[13px]'
                     
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0, rotate:360 }}
@@ -131,7 +131,7 @@ export default function HeroSection() {
                     <div className="absolute inset-0 bg-pink-200 h-1 transform rotate-45 origin-left" />
                 </motion.div>
                 <motion.div
-                    className='absolute right-[0px] bottom-[-65px]'
+                    className='absolute right-[0px] sm:bottom-[-65px] bottom-3'
                     
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0, rotate:360 }}
