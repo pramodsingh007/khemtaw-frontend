@@ -44,7 +44,7 @@ export default function HeroSection() {
                 className="flex-1 pt-16 lg:pt-0"
             >
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
-                <span className="block">100%</span>
+                <span className="block text-gray-800">100%</span>
                 <TypeAnimation
                     sequence={["Homemade", 2000, "Hygenic", 2000]}
                     wrapper="span"
@@ -52,10 +52,10 @@ export default function HeroSection() {
                     repeat={Infinity}
                     className=" lg:text-7xl text-5xl max-sm:text-4xl md:text-7xl text-blue-700 font-bold"
                 />
-                <span className="block">Meal is</span>
-                <span className="block">Waiting For You</span>
+                <span className="block text-gray-800">Meal is</span>
+                <span className="block text-gray-800">Waiting For You</span>
                 </h1>
-                <p className="text-gray-700 text-lg sm:text-xl mb-8 leading-relaxed">
+                <p className="text-gray-800 text-lg sm:text-xl mb-8 leading-relaxed">
                 Enjoy soulful, healthy, and delicious homemade meals prepared by talented chefs right from your neighborhood.
                 </p>
                 <motion.div
