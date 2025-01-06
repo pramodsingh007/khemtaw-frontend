@@ -141,7 +141,7 @@ const faqs = [
     };
 
     return (
-        <div className="relative min-h-screen overflow-hidden -mt-40">
+        <div className="relative min-h-screen overflow-hidden -mt-[85px]">
         {/* Background with parallax effect */}
         <motion.div
             className="absolute inset-0 z-0 "
@@ -256,7 +256,7 @@ const faqs = [
                 <iframe
                     width="100%"
                     height="100%"
-                    src="https://www.youtube.com/embed/XPKm0gLmYow?si=eRP8oNMsNiUorC2U"
+                    src="https://www.youtube.com/embed/HCQCoEQDjBk?si=MXiHXopfeH-E5GVJ"
                     title="Khemtaw Tiffins Home Chef - A Journey Worth Sharing"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -745,18 +745,18 @@ const faqs = [
                     />
                     
                     <Select 
-                    onValueChange={(value) => setFormData({...formData, city: value})}
+                        onValueChange={(value) => setFormData({...formData, city: value})}
                     >
-                    <SelectTrigger className="bg-white/90 border-0">
-                        <SelectValue placeholder="--Choose Your City--" />
-                    </SelectTrigger>
-                    <SelectContent>
-                        {cities.map((city) => (
-                        <SelectItem key={city} value={city.toLowerCase()}>
-                            {city}
-                        </SelectItem>
-                        ))}
-                    </SelectContent>
+                        <SelectTrigger className="bg-white/90 border-0">
+                            <SelectValue placeholder="--Choose Your City--" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            {cities.map((city) => (
+                            <SelectItem key={city} value={city.toLowerCase()}>
+                                {city}
+                            </SelectItem>
+                            ))}
+                        </SelectContent>
                     </Select>
                     
                     <Button 
