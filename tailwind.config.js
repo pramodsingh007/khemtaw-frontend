@@ -1,11 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+<<<<<<< HEAD
+  content: [
+=======
     darkMode: ["class"],
     content: [
+>>>>>>> c078759b90f2d3583ba50ff032cb20028004fd5b
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+<<<<<<< HEAD
+    extend: {},
+  },
+  plugins: [],
+=======
   	extend: {
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -79,4 +88,5 @@ export default {
   	}
   },
   plugins: [require("tailwindcss-animate")],
+>>>>>>> c078759b90f2d3583ba50ff032cb20028004fd5b
 }
