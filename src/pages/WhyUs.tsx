@@ -41,14 +41,14 @@ export default function WhyUsSection() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
-                className="lg:w-1/2 relative -mt-20 sm:-mt-0"
+                className="lg:w-1/2 relative -mt-20 sm:mt-28"
             >
                 <img
-                src={curryImage}
-                alt="Food composition"
-                width={600}
-                height={400}
-                className="w-full h-auto"
+                    src={curryImage}
+                    alt="Food composition"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto animate-bounce"
                 />
             </motion.div>
             </div>
