@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { TypeAnimation } from "react-type-animation";
 import khemtaw17 from '../assets/khemtaw17.jpeg'
 import khemtaw16 from '../assets/khemtaw16.jpeg'
@@ -7,6 +7,10 @@ import khemtaw18 from '../assets/khemtaw18.jpeg'
 import khemtaw19 from '../assets/khemtaw19.jpeg'
 import khemtaw14 from '../assets/khemtaw14.jpeg'
 import newYear from '../assets/newYear.jpg';
+import { Button } from '../components/ui/button';
+import homeWhyKhem1 from '../assets/khemtaw6.jpeg';
+import homeWhyKhem2 from '../assets/khemtaw7.jpeg';
+import khemtaw18bgLess from '../assets/khemtaw18-bgLess.png';
 
 const features = [
         {  
@@ -29,6 +33,7 @@ const features = [
         }
     ]
 
+    
 export default function HeroSection() {
     return (
         <>
@@ -283,6 +288,161 @@ export default function HeroSection() {
             </div>
             </div>
         </section>
+        <section className="relative bg-gradient-to-br from-[#FFF5EB] via-[#fcf3c6] to-[#FFE1E8] overflow-hidden py-16 md:py-24">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                {/* Hero Text Content */}
+                <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                    <span className="text-blue-700">Why Us?</span> 
+                    <span> – Because you're incredibly <span className="text-blue-700">important!</span> to us. </span>
+                    
+                </h2>
+                <p className="max-w-3xl mx-auto text-gray-600 text-lg">
+                    Count on us for delicious and healthy homemade food straight from nearby family kitchens. Discover unique concepts and flavors every time you order home-cooked meals from Khemtaw.
+                </p>
+                </div>
+
+                {/* Mobile App Preview */}
+                <div className="relative mt-16 flex justify-center">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <motion.div 
+                    className="order- lg:order-1"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                >
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-blue-700">
+                    All Day Order
+                    </h2>
+                    <p className="text-xl text-gray-600">
+                        Instant homemade food order during breakfast, lunch, high tea and dinner
+                    </p>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}   
+                    whileHover={{ scale: 1.05 }}
+                    className={`relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl mb-6 overflow-hidden`}
+                    >
+                    <img
+                        src={homeWhyKhem1}
+                        alt={homeWhyKhem1}
+                        className="p-4 object-fill rounded-[40px]"
+                    />
+                </motion.div>
+                </div>
+            </div>
+                </div>
+            </div>
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <motion.div 
+                    className="order-2 lg:order-1"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                >
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-blue-700">
+                    Advance Order
+                    </h2>
+                    <p className="text-xl text-gray-600">
+                    You can order your choice of homemade food in advance for up to 2 days. 
+                    Now you can plan for a perfect weekend
+                    </p>
+                </motion.div>
+                
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.05 }}
+                    className={`relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl mb-6 overflow-hidden`}
+                    >
+                    <img
+                        src={homeWhyKhem2}
+                        alt={homeWhyKhem2}
+                        className="p-4 object-fill rounded-[40px]"
+                    />
+                </motion.div>
+                </div>
+            </div>
+
+            <motion.div 
+                className="absolute top-4 right-4 w-24 h-24 md:w-32 md:h-32"
+                animate={{ 
+                rotate: 360,
+                scale: [1, 1.1, 1]
+                }}
+                transition={{ 
+                duration: 20,
+                repeat: Infinity,
+                repeatType: "reverse"
+                }}
+            >
+                
+            </motion.div>
+        </section>
+        <section className="relative min-h-screen -mt-14 overflow-hidden bg-gradient-to-bl from-[#FFE1E8] via-[#fcf3c6] to-[#FFF5EB] py-16 md:py-24">
+        <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Food Bowls */}
+            <motion.div 
+                className="relative h-[600px]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+            >
+                <motion.div
+                >
+                    <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg transform transition-transform hover:rotate-12">
+                    <img
+                        src={khemtaw18bgLess}
+                        alt={`Regional snack bowl`}
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-opacity duration-300" />
+                    </div>
+                </motion.div>
+            </motion.div>
+
+            {/* Right side - Text Content */}
+            <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-center lg:text-left -mt-44"
+            >
+                <motion.h2 
+                className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue-700"
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                >
+                Regional Snacks
+                </motion.h2>
+                <motion.p 
+                className="text-xl md:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                >
+                You can order a wide range of regional snacks of your choice, including pickles, papad, sweets, and various other side snacks.
+                </motion.p>
+            </motion.div>
+            </div>
+        </div>
+
+        {/* Decorative background elements */}
+        <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-pink-100 rounded-full blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-orange-100 rounded-full blur-3xl opacity-30 translate-x-1/4 translate-y-1/4" />
+    </section>
     </>
     )
 }

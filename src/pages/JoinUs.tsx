@@ -6,7 +6,6 @@ import joinBgImage from '../assets/joinbg.jpeg';
 import joinFeature from '../assets/joinFeature1.jpeg';
 import joinFeature2 from '../assets/joinFeature2.jpeg';
 import joinFeature3 from '../assets/joinFeature3.jpeg';
-import { Button } from "@/components/ui/button";
 import khemtaw1 from '../assets/khemtaw1.jpeg';
 import khemtaw2 from '../assets/khemtaw2.jpeg';
 import khemtaw3 from '../assets/khemtaw3.jpeg';
@@ -19,20 +18,10 @@ import khemtaw9 from '../assets/khemtaw9.jpeg';
 import khemtaw10 from '../assets/khemtaw10.jpeg';
 import khemtaw11 from '../assets/khemtaw11.jpeg';
 import khemtaw13 from '../assets/khemtaw13.jpeg';
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion"
-import { Input } from "@/components/ui/input";
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select";
+import { Button } from '../components/ui/button';
+import { Input } from '../components/ui/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 
 
 const cities = [

@@ -13,6 +13,7 @@ import Resources from './pages/Resources';
 import TiffinServices from './pages/TiifinServices';
 import ContactUs from './pages/CoontactUs';
 import Footer from './components/Footer';
+import './App.css';
 
 const App: React.FC = () => {
   return (
